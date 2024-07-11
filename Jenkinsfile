@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clona o código fonte do repositório
-                git 'https://github.com/ghiberti85/inf335-05.git'
+                git branch: 'main', url: 'https://github.com/ghiberti85/inf335-05.git'
             }
         }
         stage('Build') {
